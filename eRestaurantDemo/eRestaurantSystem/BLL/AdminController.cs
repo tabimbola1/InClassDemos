@@ -297,6 +297,64 @@ namespace eRestaurantSystem.BLL
              }
          }
 
+
+
+         [DataObject]
+         public class SeatingController
+         {
+             [DataObjectMethod(DataObjectMethodType.Select)]
+             public List<ReservationCollection> ReservationsByTime (DateTime date)
+             {
+                 using (var context = new eRestaurantContext())
+                 {
+                     var result = (from data in context.Reservations
+                                   where data.ReservationDate.Year == date.Year
+                                   && data.ReservationDate.Month == date.Month
+                                   && data.ReservationDate.Day == date.Day
+                                       // && data.ReservationDate.Hour == timeSlot.Hours
+                                   && data.ReservationStatus == Reservation.Booked
+                                   select new ReservationSummary()
+                                   {
+                                       ID = data.ReservationID,
+                                       Name = data.CustomerName,
+                                       Date = data.ReservationDate,
+                                       NumberInParty = data.NumberInParty,
+                                       Status = data.ReservationStatus,
+                                       Event = data.Event.Description,
+                                       Contact = data.ContactPhone
+                                   }).ToList();
+
+                     //The second part of this  method uses the results of the 
+                     //first linq query. 
+                     //Linq to Entity Will only execute the query when it comes 
+                     // necessary for having results in memory 
+                     //
+                     // To get your queru to execute and have the resulting data 
+                     // inside memory  for further  use , you can attach the .ToList()
+                     //to the previous query 
+                     // mote: the second query is not using an Entity 
+                     //it is using the results from a previous query 
+
+                     //item group is a tempoary in memory data collection 
+                     // this collection can be used in selecting your final 
+                     //data collection 
+
+                     var finalResult = from item in result
+                                       orderby item.NumberInParty
+                                       group item by item.Date.Hour into itemGroup
+                                       select new ReservationCollection()
+                                       {
+                                           Hour = itemGroup.Key,
+                                           Reservations = itemGroup.ToList()
+                                       };
+                     return finalResult.OrderBy(x => x.Hour).ToList();
+                 }
+             }
+         }
+
+
+
+
         #endregion
     }//eof class
 
