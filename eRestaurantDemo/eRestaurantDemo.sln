@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "eRestaurantWebsite", "http://localhost:55547", "{DFE4B34E-1FEC-4BF8-BF07-12B1DBA1C769}"
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
@@ -27,6 +25,13 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "eRestaurantWebsite", "http:
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eRestaurantSystem", "eRestaurantSystem\eRestaurantSystem.csproj", "{961F3C2E-C241-4603-B758-0802A09E80F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{0B911BEF-9067-49BD-8F73-542BD15BAB40}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
