@@ -10,9 +10,10 @@ using System.Collections;
 
 namespace eRestaurantSystem.DAL.DTOs
 {
-    public class MenuCategoryItems
+    public class ReservationByDate
     {
         public string Description { get; set; }
-        public IEnumerable MenuItems { get; set; }
+        //the next variable will hold a collection of reservation rows
+        public IEnumerable Reservations { get; set; }
     }
 }

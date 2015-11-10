@@ -6,16 +6,16 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>0.75in</Width>
+              <Width>0.76042in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1in</Width>
+              <Width>1.04167in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1in</Width>
+              <Width>0.63542in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.83333in</Width>
+              <Width>2in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -101,7 +101,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value> Size</Value>
+                              <Value>Size</Value>
                               <Style>
                                 <FontFamily>Verdana</FontFamily>
                                 <FontWeight>Bold</FontWeight>
@@ -217,7 +217,7 @@
                                 <FontFamily>Verdana</FontFamily>
                                 <FontSize>9pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
-                                <Format>#,0.00;(#,0.00)</Format>
+                                <Format>0.00;(0.00)</Format>
                                 <Color>#4e0000</Color>
                               </Style>
                             </TextRun>
@@ -368,7 +368,7 @@
                                 <FontFamily>Verdana</FontFamily>
                                 <FontSize>9pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
-                                <Format>#,0.00;(#,0.00)</Format>
+                                <Format>0.00;(0.00)</Format>
                                 <Color>#4e0000</Color>
                               </Style>
                             </TextRun>
@@ -482,6 +482,7 @@
                               <Style>
                                 <FontFamily>Verdana</FontFamily>
                                 <FontSize>9pt</FontSize>
+                                <Format>0;(0)</Format>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -511,11 +512,11 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Sum(Fields!BillTotal.Value)</Value>
+                              <Value>=Fields!BillTotal.Value</Value>
                               <Style>
                                 <FontFamily>Verdana</FontFamily>
                                 <FontSize>9pt</FontSize>
-                                <Format>#,0.00;(#,0.00)</Format>
+                                <Format>0.00;(0.00)</Format>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -545,7 +546,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Sum(Fields!PartySize.Value)</Value>
+                              <Value>=Fields!PartySize.Value</Value>
                               <Style>
                                 <FontFamily>Verdana</FontFamily>
                                 <FontSize>9pt</FontSize>
@@ -568,7 +569,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -618,11 +618,12 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Count(Fields!BillID.Value)</Value>
                               <Style>
                                 <FontFamily>Verdana</FontFamily>
                                 <FontSize>9pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
+                                <Format>#,0;(#,0)</Format>
                                 <Color>White</Color>
                               </Style>
                             </TextRun>
@@ -771,7 +772,7 @@
           <TablixMembers>
             <TablixMember>
               <TablixHeader>
-                <Size>1.125in</Size>
+                <Size>1.57292in</Size>
                 <CellContents>
                   <Textbox Name="Textbox11">
                     <CanGrow>true</CanGrow>
@@ -780,7 +781,7 @@
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value>Date</Value>
+                            <Value>Bill Date</Value>
                             <Style>
                               <FontFamily>Verdana</FontFamily>
                               <FontWeight>Bold</FontWeight>
@@ -809,7 +810,7 @@
               <TablixMembers>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>1in</Size>
+                    <Size>1.32292in</Size>
                     <CellContents>
                       <Textbox Name="Textbox9">
                         <CanGrow>true</CanGrow>
@@ -863,7 +864,7 @@
                 </SortExpression>
               </SortExpressions>
               <TablixHeader>
-                <Size>1.125in</Size>
+                <Size>1.57292in</Size>
                 <CellContents>
                   <Textbox Name="BillDate">
                     <CanGrow>true</CanGrow>
@@ -903,7 +904,7 @@
               <TablixMembers>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>1in</Size>
+                    <Size>1.32292in</Size>
                     <CellContents>
                       <Textbox Name="Textbox20">
                         <CanGrow>true</CanGrow>
@@ -942,27 +943,27 @@
                   <KeepWithGroup>After</KeepWithGroup>
                 </TablixMember>
                 <TablixMember>
-                  <Group Name="Name">
+                  <Group Name="WaiterName">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!Name.Value</GroupExpression>
+                      <GroupExpression>=Fields!WaiterName.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!Name.Value</Value>
+                      <Value>=Fields!WaiterName.Value</Value>
                     </SortExpression>
                   </SortExpressions>
                   <TablixHeader>
-                    <Size>1in</Size>
+                    <Size>1.32292in</Size>
                     <CellContents>
-                      <Textbox Name="Name">
+                      <Textbox Name="WaiterName">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>=Fields!Name.Value</Value>
+                                <Value>=Fields!WaiterName.Value</Value>
                                 <Style>
                                   <FontFamily>Verdana</FontFamily>
                                   <FontSize>9pt</FontSize>
@@ -974,7 +975,7 @@
                             <Style />
                           </Paragraph>
                         </Paragraphs>
-                        <rd:DefaultName>Name</rd:DefaultName>
+                        <rd:DefaultName>WaiterName</rd:DefaultName>
                         <Style>
                           <Border>
                             <Color>#e8a25a</Color>
@@ -997,7 +998,7 @@
                       <Group Name="Details" />
                       <Visibility>
                         <Hidden>true</Hidden>
-                        <ToggleItem>Name</ToggleItem>
+                        <ToggleItem>WaiterName</ToggleItem>
                       </Visibility>
                     </TablixMember>
                   </TablixMembers>
@@ -1010,7 +1011,7 @@
             </TablixMember>
             <TablixMember>
               <TablixHeader>
-                <Size>1.125in</Size>
+                <Size>1.57292in</Size>
                 <CellContents>
                   <Textbox Name="Textbox13">
                     <CanGrow>true</CanGrow>
@@ -1049,7 +1050,7 @@
               <TablixMembers>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>1in</Size>
+                    <Size>1.32292in</Size>
                     <CellContents>
                       <Textbox Name="Textbox14">
                         <CanGrow>true</CanGrow>
@@ -1093,7 +1094,7 @@
         </TablixRowHierarchy>
         <DataSetName>WaiterBillingDS</DataSetName>
         <Height>1.25in</Height>
-        <Width>6.70833in</Width>
+        <Width>7.33333in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -1101,35 +1102,104 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>1.3125in</Height>
+    <Height>1.30208in</Height>
     <Style />
   </Body>
-  <Width>7.33208in</Width>
+  <Width>7.5925in</Width>
   <Page>
     <PageHeader>
       <Height>1in</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
-        <Textbox Name="Textbox31">
+        <Textbox Name="ExecutionTime">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
           <Paragraphs>
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
-                  <Style />
+                  <Value>=Globals!ExecutionTime</Value>
+                  <Style>
+                    <Format>f</Format>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Left</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>ExecutionTime</rd:DefaultName>
+          <Top>0.16542in</Top>
+          <Left>0.26042in</Left>
+          <Height>0.25in</Height>
+          <Width>2.73958in</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="PageName">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>="Waiter Billing Report for May"</Value>
+                  <Style>
+                    <FontSize>24pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
                 </TextRun>
               </TextRuns>
               <Style />
             </Paragraph>
           </Paragraphs>
-          <rd:DefaultName>Textbox31</rd:DefaultName>
-          <Top>0.38417in</Top>
-          <Left>6.23833in</Left>
+          <rd:DefaultName>PageName</rd:DefaultName>
+          <Top>0.45708in</Top>
+          <Left>0.26042in</Left>
+          <Height>0.47347in</Height>
+          <Width>5.52083in</Width>
+          <ZIndex>1</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="UserID">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=User!UserID</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>UserID</rd:DefaultName>
+          <Top>0.16542in</Top>
+          <Left>6.33333in</Left>
           <Height>0.25in</Height>
           <Width>1in</Width>
+          <ZIndex>2</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -1151,6 +1221,37 @@
       <Height>1in</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="PageNumber">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=Globals!PageNumber &amp; "of" &amp; Globals!TotalPages</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>PageNumber</rd:DefaultName>
+          <Top>0.26958in</Top>
+          <Left>3.05083in</Left>
+          <Height>0.25in</Height>
+          <Width>1in</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
       <Style>
         <Border>
           <Style>None</Style>
@@ -1170,7 +1271,7 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>886033ca-0cfe-4b3d-825c-f1bc19e4d9a8</rd:DataSourceID>
+      <rd:DataSourceID>416184f5-477c-4c97-b34e-d30d76f221d9</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
@@ -1184,8 +1285,8 @@
           <DataField>BillDate</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
-        <Field Name="Name">
-          <DataField>Name</DataField>
+        <Field Name="WaiterName">
+          <DataField>WaiterName</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="BillID">
@@ -1208,11 +1309,11 @@
       <rd:DataSetInfo>
         <rd:DataSetName>eRestaurantSystem.BLL</rd:DataSetName>
         <rd:TableName>AdminController</rd:TableName>
-        <rd:ObjectDataSourceSelectMethod>getWaiterBillingReport</rd:ObjectDataSourceSelectMethod>
+        <rd:ObjectDataSourceSelectMethod>GetWaiterBillingReport</rd:ObjectDataSourceSelectMethod>
         <rd:ObjectDataSourceType>eRestaurantSystem.BLL.AdminController, eRestaurantSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportID>87957c77-bc45-4c52-ad01-3e85f8027c59</rd:ReportID>
+  <rd:ReportID>73bb5d6e-1b0e-4fd1-ae3a-be1b12b653e7</rd:ReportID>
 </Report>

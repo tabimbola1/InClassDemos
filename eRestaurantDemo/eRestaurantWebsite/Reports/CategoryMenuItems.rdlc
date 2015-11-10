@@ -6,16 +6,16 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1in</Width>
+              <Width>1.59375in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.61458in</Width>
+              <Width>1.14583in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.75in</Width>
+              <Width>0.77083in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.85417in</Width>
+              <Width>4.33333in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -31,9 +31,9 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Item </Value>
+                              <Value>Item</Value>
                               <Style>
-                                <FontFamily>Times New Roman</FontFamily>
+                                <FontFamily>Tahoma</FontFamily>
                                 <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
@@ -46,10 +46,10 @@
                       <rd:DefaultName>Textbox2</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>#869286</Color>
+                          <Color>#7292cc</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#708270</BackgroundColor>
+                        <BackgroundColor>#4c68a2</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -69,7 +69,7 @@
                             <TextRun>
                               <Value>Price</Value>
                               <Style>
-                                <FontFamily>Times New Roman</FontFamily>
+                                <FontFamily>Tahoma</FontFamily>
                                 <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
@@ -82,10 +82,10 @@
                       <rd:DefaultName>Textbox3</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>#869286</Color>
+                          <Color>#7292cc</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#708270</BackgroundColor>
+                        <BackgroundColor>#4c68a2</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -105,7 +105,7 @@
                             <TextRun>
                               <Value>Cals</Value>
                               <Style>
-                                <FontFamily>Times New Roman</FontFamily>
+                                <FontFamily>Tahoma</FontFamily>
                                 <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
@@ -118,10 +118,10 @@
                       <rd:DefaultName>Textbox5</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>#869286</Color>
+                          <Color>#7292cc</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#708270</BackgroundColor>
+                        <BackgroundColor>#4c68a2</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -141,7 +141,7 @@
                             <TextRun>
                               <Value>Comment</Value>
                               <Style>
-                                <FontFamily>Times New Roman</FontFamily>
+                                <FontFamily>Tahoma</FontFamily>
                                 <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
@@ -154,10 +154,10 @@
                       <rd:DefaultName>Textbox7</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>#869286</Color>
+                          <Color>#7292cc</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#708270</BackgroundColor>
+                        <BackgroundColor>#4c68a2</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -182,8 +182,8 @@
                             <TextRun>
                               <Value>=Fields!ItemDescription.Value</Value>
                               <Style>
-                                <FontFamily>Times New Roman</FontFamily>
-                                <FontSize>11pt</FontSize>
+                                <FontFamily>Tahoma</FontFamily>
+                                <Color>#4d4d4d</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -215,9 +215,9 @@
                             <TextRun>
                               <Value>=Fields!Price.Value</Value>
                               <Style>
-                                <FontFamily>Times New Roman</FontFamily>
-                                <FontSize>11pt</FontSize>
-                                <Format>0.00;(0.00);'-'</Format>
+                                <FontFamily>Tahoma</FontFamily>
+                                <Format>'$'0.00;('$'0.00)</Format>
+                                <Color>#4d4d4d</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -234,6 +234,7 @@
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
+                        <rd:FormatSymbolCulture>en-US</rd:FormatSymbolCulture>
                       </Style>
                     </Textbox>
                   </CellContents>
@@ -249,8 +250,8 @@
                             <TextRun>
                               <Value>=Fields!Calories.Value</Value>
                               <Style>
-                                <FontFamily>Times New Roman</FontFamily>
-                                <FontSize>11pt</FontSize>
+                                <FontFamily>Tahoma</FontFamily>
+                                <Color>#4d4d4d</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -282,8 +283,8 @@
                             <TextRun>
                               <Value>=Fields!Comment.Value</Value>
                               <Style>
-                                <FontFamily>Times New Roman</FontFamily>
-                                <FontSize>11pt</FontSize>
+                                <FontFamily>Tahoma</FontFamily>
+                                <Color>#4d4d4d</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -320,10 +321,9 @@
                             <TextRun>
                               <Value />
                               <Style>
-                                <FontFamily>Times New Roman</FontFamily>
-                                <FontSize>11pt</FontSize>
+                                <FontFamily>Tahoma</FontFamily>
                                 <FontWeight>Bold</FontWeight>
-                                <Color>White</Color>
+                                <Color>#465678</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -333,10 +333,10 @@
                       <rd:DefaultName>Textbox17</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>#78b07c</Color>
+                          <Color>#c6daf8</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#66a068</BackgroundColor>
+                        <BackgroundColor>#9eb6e4</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -356,11 +356,10 @@
                             <TextRun>
                               <Value>=Avg(Fields!Price.Value)</Value>
                               <Style>
-                                <FontFamily>Times New Roman</FontFamily>
-                                <FontSize>11pt</FontSize>
+                                <FontFamily>Tahoma</FontFamily>
                                 <FontWeight>Bold</FontWeight>
-                                <Format>'$'0.00;('$'0.00)</Format>
-                                <Color>White</Color>
+                                <Format>0.00;(0.00)</Format>
+                                <Color>#465678</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -370,15 +369,14 @@
                       <rd:DefaultName>Textbox18</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>#78b07c</Color>
+                          <Color>#c6daf8</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#66a068</BackgroundColor>
+                        <BackgroundColor>#9eb6e4</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
-                        <rd:FormatSymbolCulture>en-CA</rd:FormatSymbolCulture>
                       </Style>
                     </Textbox>
                   </CellContents>
@@ -394,10 +392,9 @@
                             <TextRun>
                               <Value />
                               <Style>
-                                <FontFamily>Times New Roman</FontFamily>
-                                <FontSize>11pt</FontSize>
+                                <FontFamily>Tahoma</FontFamily>
                                 <FontWeight>Bold</FontWeight>
-                                <Color>White</Color>
+                                <Color>#465678</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -407,10 +404,10 @@
                       <rd:DefaultName>Textbox19</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>#78b07c</Color>
+                          <Color>#c6daf8</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#66a068</BackgroundColor>
+                        <BackgroundColor>#9eb6e4</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -430,10 +427,9 @@
                             <TextRun>
                               <Value />
                               <Style>
-                                <FontFamily>Times New Roman</FontFamily>
-                                <FontSize>11pt</FontSize>
+                                <FontFamily>Tahoma</FontFamily>
                                 <FontWeight>Bold</FontWeight>
-                                <Color>White</Color>
+                                <Color>#465678</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -443,10 +439,10 @@
                       <rd:DefaultName>Textbox20</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>#78b07c</Color>
+                          <Color>#c6daf8</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#66a068</BackgroundColor>
+                        <BackgroundColor>#9eb6e4</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -471,7 +467,7 @@
           <TablixMembers>
             <TablixMember>
               <TablixHeader>
-                <Size>1.44792in</Size>
+                <Size>1.76042in</Size>
                 <CellContents>
                   <Textbox Name="Textbox9">
                     <CanGrow>true</CanGrow>
@@ -480,9 +476,9 @@
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value>Category </Value>
+                            <Value>Category</Value>
                             <Style>
-                              <FontFamily>Times New Roman</FontFamily>
+                              <FontFamily>Tahoma</FontFamily>
                               <FontSize>11pt</FontSize>
                               <FontWeight>Bold</FontWeight>
                               <Color>White</Color>
@@ -495,10 +491,10 @@
                     <rd:DefaultName>Textbox9</rd:DefaultName>
                     <Style>
                       <Border>
-                        <Color>#869286</Color>
+                        <Color>#7292cc</Color>
                         <Style>Solid</Style>
                       </Border>
-                      <BackgroundColor>#708270</BackgroundColor>
+                      <BackgroundColor>#4c68a2</BackgroundColor>
                       <PaddingLeft>2pt</PaddingLeft>
                       <PaddingRight>2pt</PaddingRight>
                       <PaddingTop>2pt</PaddingTop>
@@ -524,7 +520,7 @@
                 </SortExpression>
               </SortExpressions>
               <TablixHeader>
-                <Size>1.44792in</Size>
+                <Size>1.76042in</Size>
                 <CellContents>
                   <Textbox Name="CategoryDescription">
                     <CanGrow>true</CanGrow>
@@ -535,10 +531,9 @@
                           <TextRun>
                             <Value>=Fields!CategoryDescription.Value</Value>
                             <Style>
-                              <FontFamily>Times New Roman</FontFamily>
-                              <FontSize>11pt</FontSize>
+                              <FontFamily>Tahoma</FontFamily>
                               <FontWeight>Bold</FontWeight>
-                              <Color>White</Color>
+                              <Color>#465678</Color>
                             </Style>
                           </TextRun>
                         </TextRuns>
@@ -548,10 +543,10 @@
                     <rd:DefaultName>CategoryDescription</rd:DefaultName>
                     <Style>
                       <Border>
-                        <Color>#78b07c</Color>
+                        <Color>#c6daf8</Color>
                         <Style>Solid</Style>
                       </Border>
-                      <BackgroundColor>#66a068</BackgroundColor>
+                      <BackgroundColor>#9eb6e4</BackgroundColor>
                       <PaddingLeft>2pt</PaddingLeft>
                       <PaddingRight>2pt</PaddingRight>
                       <PaddingTop>2pt</PaddingTop>
@@ -575,9 +570,9 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <DataSetName>CategoryMenItemDS</DataSetName>
+        <DataSetName>CategoryMenuItemsDS</DataSetName>
         <Height>0.75in</Height>
-        <Width>5.66667in</Width>
+        <Width>9.60417in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -585,13 +580,13 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>0.75in</Height>
+    <Height>0.76042in</Height>
     <Style />
   </Body>
-  <Width>6.5in</Width>
+  <Width>9.7175in</Width>
   <Page>
     <PageHeader>
-      <Height>1in</Height>
+      <Height>1.29167in</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -612,8 +607,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>ExecutionTime</rd:DefaultName>
+          <Top>0.13542in</Top>
+          <Left>0.14583in</Left>
           <Height>0.25in</Height>
-          <Width>1.84375in</Width>
+          <Width>3.05208in</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -639,10 +636,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>UserID</rd:DefaultName>
-          <Top>0.11333in</Top>
-          <Left>5.38417in</Left>
+          <Top>0.13542in</Top>
+          <Left>7.77083in</Left>
           <Height>0.25in</Height>
-          <Width>1in</Width>
+          <Width>1.83333in</Width>
           <ZIndex>1</ZIndex>
           <Style>
             <Border>
@@ -661,11 +658,11 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>="This is the Header"</Value>
+                  <Value>="This is the report title"</Value>
                   <Style>
-                    <FontSize>36pt</FontSize>
+                    <FontSize>24pt</FontSize>
                     <FontWeight>Bold</FontWeight>
-                    <Color>Red</Color>
+                    <Color>Silver</Color>
                   </Style>
                 </TextRun>
               </TextRuns>
@@ -673,9 +670,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox24</rd:DefaultName>
-          <Top>0.31944in</Top>
-          <Height>0.65278in</Height>
-          <Width>3.0625in</Width>
+          <Top>0.53in</Top>
+          <Left>0.14583in</Left>
+          <Height>0.45264in</Height>
+          <Width>4.35417in</Width>
           <ZIndex>2</ZIndex>
           <Style>
             <Border>
@@ -706,7 +704,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>=Globals!PageNumber &amp; "of" &amp;Globals!TotalPages</Value>
+                  <Value>=Globals!PageNumber &amp; " of " &amp; Globals!TotalPages</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
@@ -714,10 +712,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>PageNumber</rd:DefaultName>
-          <Top>0.51958in</Top>
-          <Left>2.55083in</Left>
+          <Top>0.47792in</Top>
+          <Left>4.27083in</Left>
           <Height>0.25in</Height>
-          <Width>1.97917in</Width>
+          <Width>1in</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -748,11 +746,11 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>b9b81109-6987-4fa4-89da-609a96fbc8a0</rd:DataSourceID>
+      <rd:DataSourceID>4321e5fe-7d43-4ba9-b1d6-0ecce3742862</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="CategoryMenItemDS">
+    <DataSet Name="CategoryMenuItemsDS">
       <Query>
         <DataSourceName>eRestaurantSystemBLL</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
@@ -788,5 +786,5 @@
     </DataSet>
   </DataSets>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportID>0be98577-9f51-40de-809f-aeb5c505fc30</rd:ReportID>
+  <rd:ReportID>5588759d-b2bb-42cf-bffd-b7b781f78eb7</rd:ReportID>
 </Report>

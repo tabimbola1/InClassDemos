@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{961F3C2E-C241-4603-B758-0802A09E80F0}</ProjectGuid>
+    <ProjectGuid>{E5F72A2D-BC12-4F25-9983-51769B6C976E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>eRestaurantSystem</RootNamespace>
@@ -41,9 +41,6 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.Entity" />
-    <Reference Include="System.Data.Entity.Design" />
-    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,8 +51,8 @@
     <Compile Include="BLL\AdminController.cs" />
     <Compile Include="BusinessRuleException.cs" />
     <Compile Include="DAL\DTOs\MenuCategoryItems.cs" />
+    <Compile Include="DAL\DTOs\ReservationByDate.cs" />
     <Compile Include="DAL\DTOs\ReservationCollection.cs" />
-    <Compile Include="DAL\DTOs\ReservationsByDate.cs" />
     <Compile Include="DAL\Entities\Bill.cs" />
     <Compile Include="DAL\Entities\BillItem.cs" />
     <Compile Include="DAL\Entities\Item.cs" />
@@ -69,7 +66,9 @@
     <Compile Include="DAL\POCOs\MenuItem.cs" />
     <Compile Include="DAL\POCOs\ReservationDetail.cs" />
     <Compile Include="DAL\POCOs\ReservationSummary.cs" />
+    <Compile Include="DAL\POCOs\SeatingSummary.cs" />
     <Compile Include="DAL\POCOs\WaiterBilling.cs" />
+    <Compile Include="DAL\POCOs\WaiterOnDuty.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

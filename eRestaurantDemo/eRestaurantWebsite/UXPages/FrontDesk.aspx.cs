@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-#region Additional namesoaces
+#region Additional Namespaces
 using eRestaurantSystem.BLL;
 using eRestaurantSystem.DAL.Entities;
 using eRestaurantSystem.DAL.DTOs;
@@ -21,8 +21,8 @@ public partial class UXPages_FrontDesk : System.Web.UI.Page
     protected void MockLastBillingDateTime_Click(object sender, EventArgs e)
     {
         AdminController sysmgr = new AdminController();
-        DateTime info = sysmgr.GetLastBillDateTime(); 
+        DateTime info = sysmgr.GetLastBillDateTime();
         SearchDate.Text = info.ToString("yyyy-MM-dd");
-        SearchTime.Text = info.ToString("hh:mm:ss");
+        SearchTime.Text = info.ToString("HH:mm");
     }
 }

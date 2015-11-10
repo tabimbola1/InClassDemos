@@ -13,16 +13,15 @@ namespace eRestaurantSystem.DAL.Entities
 {
     public class Reservation
     {
-        //constant strings for code readability 
-
+        //create a series of constant strings so actual value do not need to be remembered, instead, a reasonable name will be use
         public const string Booked = "B";
         public const string Arrived = "A";
         public const string Complete = "C";
-        public const string Noshow = "N";
+        public const string NoShow = "N";
         public const string Cancelled = "X";
         [Key]
         public int ReservationID { get; set; }
-        [Required]
+        [Required(ErrorMessage="Customer Name is required.")]
         [StringLength(30,MinimumLength=5)]
         public string CustomerName { get; set; }
         public DateTime ReservationDate {get;set;}
@@ -36,24 +35,24 @@ namespace eRestaurantSystem.DAL.Entities
         [StringLength(1)]
         public string EventCode { get; set; }
 
-        //Navigation properties
+        //Navigation properties 
         public virtual SpecialEvent Event { get; set; }
 
-        // the Reservations table (sql) is a many to many
-        //relationship to the Tables table (sql)
+        //the Reservation table (SQL) is a many to many
+        //relationship to the Tables table (SQL)
 
-        //Sql solves this problem by having an associate table
+        //sql solves this problem by having an associate table
         //that has a compound primary key created from Reservations
-        // and Tables.
+        //and Tables.
 
-        //We will NOT be creating an entity for this associate table.
-        //Instead we will create on overload map in our DbContext class
+        //We will Not be creating a entity for this associate table.
+        //Instead we will create on overload may in our DbContext class
 
-        //However, we can still create the virtual navigation property to
+        //However, we can still create the virtual navigation property to 
         //accomondate this relationship
 
         public virtual ICollection<Table> Tables { get; set; }
         public virtual ICollection<Bill> Bills { get; set; }
-      
+
     }
 }
