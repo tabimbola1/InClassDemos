@@ -6,16 +6,16 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1.59375in</Width>
+              <Width>2.1875in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.14583in</Width>
+              <Width>0.625in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.77083in</Width>
+              <Width>0.42708in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.33333in</Width>
+              <Width>3.54167in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -31,7 +31,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Item</Value>
+                              <Value>Item </Value>
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
                                 <FontSize>11pt</FontSize>
@@ -216,7 +216,7 @@
                               <Value>=Fields!Price.Value</Value>
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
-                                <Format>'$'0.00;('$'0.00)</Format>
+                                <Format>0.00;(0.00);'-'</Format>
                                 <Color>#4d4d4d</Color>
                               </Style>
                             </TextRun>
@@ -234,7 +234,6 @@
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
-                        <rd:FormatSymbolCulture>en-US</rd:FormatSymbolCulture>
                       </Style>
                     </Textbox>
                   </CellContents>
@@ -358,7 +357,7 @@
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
                                 <FontWeight>Bold</FontWeight>
-                                <Format>0.00;(0.00)</Format>
+                                <Format>'$'0.00;('$'0.00)</Format>
                                 <Color>#465678</Color>
                               </Style>
                             </TextRun>
@@ -377,6 +376,7 @@
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
+                        <rd:FormatSymbolCulture>en-US</rd:FormatSymbolCulture>
                       </Style>
                     </Textbox>
                   </CellContents>
@@ -467,7 +467,7 @@
           <TablixMembers>
             <TablixMember>
               <TablixHeader>
-                <Size>1.76042in</Size>
+                <Size>1.88542in</Size>
                 <CellContents>
                   <Textbox Name="Textbox9">
                     <CanGrow>true</CanGrow>
@@ -476,7 +476,7 @@
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value>Category</Value>
+                            <Value>Category </Value>
                             <Style>
                               <FontFamily>Tahoma</FontFamily>
                               <FontSize>11pt</FontSize>
@@ -520,7 +520,7 @@
                 </SortExpression>
               </SortExpressions>
               <TablixHeader>
-                <Size>1.76042in</Size>
+                <Size>1.88542in</Size>
                 <CellContents>
                   <Textbox Name="CategoryDescription">
                     <CanGrow>true</CanGrow>
@@ -570,9 +570,9 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <DataSetName>CategoryMenuItemsDS</DataSetName>
+        <DataSetName>CategoryMenuItemDS</DataSetName>
         <Height>0.75in</Height>
-        <Width>9.60417in</Width>
+        <Width>8.66667in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -580,13 +580,13 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>0.76042in</Height>
+    <Height>0.75in</Height>
     <Style />
   </Body>
-  <Width>9.7175in</Width>
+  <Width>8.67708in</Width>
   <Page>
     <PageHeader>
-      <Height>1.29167in</Height>
+      <Height>1in</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -599,7 +599,7 @@
                 <TextRun>
                   <Value>=Globals!ExecutionTime</Value>
                   <Style>
-                    <Format>f</Format>
+                    <Format>dddd, MMMM dd, yyyy h:mm:ss tt</Format>
                   </Style>
                 </TextRun>
               </TextRuns>
@@ -607,10 +607,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>ExecutionTime</rd:DefaultName>
-          <Top>0.13542in</Top>
-          <Left>0.14583in</Left>
           <Height>0.25in</Height>
-          <Width>3.05208in</Width>
+          <Width>2.41542in</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -636,10 +634,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>UserID</rd:DefaultName>
-          <Top>0.13542in</Top>
-          <Left>7.77083in</Left>
+          <Top>0.12375in</Top>
+          <Left>6.9675in</Left>
           <Height>0.25in</Height>
-          <Width>1.83333in</Width>
+          <Width>1in</Width>
           <ZIndex>1</ZIndex>
           <Style>
             <Border>
@@ -658,11 +656,12 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>="This is the report title"</Value>
+                  <Value>="This is the header"</Value>
                   <Style>
-                    <FontSize>24pt</FontSize>
+                    <FontFamily>Bauhaus 93</FontFamily>
+                    <FontSize>36pt</FontSize>
                     <FontWeight>Bold</FontWeight>
-                    <Color>Silver</Color>
+                    <Color>Red</Color>
                   </Style>
                 </TextRun>
               </TextRuns>
@@ -670,10 +669,9 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox24</rd:DefaultName>
-          <Top>0.53in</Top>
-          <Left>0.14583in</Left>
-          <Height>0.45264in</Height>
-          <Width>4.35417in</Width>
+          <Top>0.31944in</Top>
+          <Height>0.64806in</Height>
+          <Width>6.2175in</Width>
           <ZIndex>2</ZIndex>
           <Style>
             <Border>
@@ -712,10 +710,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>PageNumber</rd:DefaultName>
-          <Top>0.47792in</Top>
-          <Left>4.27083in</Left>
+          <Top>0.44667in</Top>
+          <Left>2.98833in</Left>
           <Height>0.25in</Height>
-          <Width>1in</Width>
+          <Width>2.42708in</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -746,11 +744,11 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>4321e5fe-7d43-4ba9-b1d6-0ecce3742862</rd:DataSourceID>
+      <rd:DataSourceID>18294aec-ae8e-4964-8b9b-0cddcf3fd1db</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="CategoryMenuItemsDS">
+    <DataSet Name="CategoryMenuItemDS">
       <Query>
         <DataSourceName>eRestaurantSystemBLL</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
@@ -786,5 +784,5 @@
     </DataSet>
   </DataSets>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportID>5588759d-b2bb-42cf-bffd-b7b781f78eb7</rd:ReportID>
+  <rd:ReportID>9938da5c-09ec-4c3e-886c-bc80ee62058d</rd:ReportID>
 </Report>

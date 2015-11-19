@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E5F72A2D-BC12-4F25-9983-51769B6C976E}</ProjectGuid>
+    <ProjectGuid>{961F3C2E-C241-4603-B758-0802A09E80F0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>eRestaurantSystem</RootNamespace>
@@ -51,8 +51,8 @@
     <Compile Include="BLL\AdminController.cs" />
     <Compile Include="BusinessRuleException.cs" />
     <Compile Include="DAL\DTOs\MenuCategoryItems.cs" />
-    <Compile Include="DAL\DTOs\ReservationByDate.cs" />
     <Compile Include="DAL\DTOs\ReservationCollection.cs" />
+    <Compile Include="DAL\DTOs\ReservationsByDate.cs" />
     <Compile Include="DAL\Entities\Bill.cs" />
     <Compile Include="DAL\Entities\BillItem.cs" />
     <Compile Include="DAL\Entities\Item.cs" />

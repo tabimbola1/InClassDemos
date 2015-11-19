@@ -31,6 +31,7 @@ namespace eRestaurantSystem.DAL.Entities
         public virtual Waiter Waiter { get; set; }
         public virtual Table Table { get; set; }
         public virtual Reservation Reservation { get; set; }
+    
 
         public Bill()
         {

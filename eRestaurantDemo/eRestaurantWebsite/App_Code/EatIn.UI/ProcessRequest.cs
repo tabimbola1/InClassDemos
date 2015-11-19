@@ -6,7 +6,8 @@ using System.Web;
 /// <summary>
 /// Summary description for ProcessRequest
 /// </summary>
+
 namespace EatIn.UI
 {
-	public delegate void ProcessRequest();
+    public delegate void ProcessRequest();
 }

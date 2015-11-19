@@ -15,35 +15,35 @@ namespace eRestaurantSystem.DAL.Entities
     {
         [Key]
         public int TableID { get; set; }
-        [Required,Range(1,25)]
+        [Required, Range(1,25)]
         public byte TableNumber { get; set; } //tinyint in sql
         public bool Smoking { get; set; }
         [Required]
         public int Capacity { get; set; }
-        public bool Avaiable { get; set; }
+        public bool Available { get; set; }
 
         //Navigation Properties
-        //the Reservation table (SQL) is a many to many
-        //relationship to the Tables table (SQL)
+        // the Reservations table (sql) is a many to many
+        //relationship to the Tables table (sql)
 
-        //sql solves this problem by having an associate table
+        //Sql solves this problem by having an associate table
         //that has a compound primary key created from Reservations
-        //and Tables.
+        // and Tables.
 
-        //We will Not be creating a entity for this associate table.
-        //Instead we will create on overload may in our DbContext class
+        //We will NOT be creating an entity for this associate table.
+        //Instead we will create on overload map in our DbContext class
 
-        //However, we can still create the virtual navigation property to 
+        //However, we can still create the virtual navigation property to
         //accomondate this relationship
 
         public virtual ICollection<Reservation> Reservations { get; set; }
         public virtual ICollection<Bill> Bills { get; set; }
+      
 
         public Table()
         {
-            Avaiable = true;
+            Available = true;
             Smoking = false;
         }
-
     }
 }
