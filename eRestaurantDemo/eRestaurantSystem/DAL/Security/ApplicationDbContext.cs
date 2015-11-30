@@ -8,7 +8,6 @@ using System.Threading.Tasks;
 
 namespace eRestaurantSystem.DAL.Security
 {
-
     internal class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()

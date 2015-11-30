@@ -10,14 +10,13 @@ using System.Threading.Tasks;
 
 namespace eRestaurantSystem.BLL.Security
 {
-    public class RoleManager: RoleManager<IdentityRole>
+    public class RoleManager : RoleManager<IdentityRole>
     {
         public RoleManager()
             :base(new RoleStore<IdentityRole>(new ApplicationDbContext()))
         {
 
         }
-
         public void AddDefaultRoles()
         {
             foreach (string roleName in SecurityRoles.DefaultSecurityRoles)

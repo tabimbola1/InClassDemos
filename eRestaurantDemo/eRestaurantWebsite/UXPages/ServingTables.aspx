@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="ServingTables.aspx.cs" Inherits="UXPages_ServingTalbes" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="ServingTables.aspx.cs" Inherits="UXPages_ServingTables" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
     <h1>Serving Tables</h1>
@@ -11,11 +11,10 @@
             <li>Bill ID = '<%= this.Request.QueryString["bill"] %>'<br />
             <code>Request.QueryString["bill"]</code> = The ID of the bill</li>
             <li>Mock-Date (ticks) = '<%= this.Request.QueryString["md"] %>'<br />
-            <code>Request.QueryString["md"]</code> = The date'<%= this.Request.QueryString["mds"] %>' (in ticks) that was being used on the Front Desk form</li>
+            <code>Request.QueryString["md"]</code> = The date '<%= this.Request.QueryString["mds"] %>' (in ticks) that was being used on the Front Desk form</li>
             <li>Mock-Time (ticks) = '<%= this.Request.QueryString["mt"] %>'<br />
-            <code>Request.QueryString["mt"]</code> = The time '<%= this.Request.QueryString["mts"] %>'(in ticks) that was being used on the Front Desk form</li>
+            <code>Request.QueryString["mt"]</code> = The time '<%= this.Request.QueryString["mts"] %>' (in ticks) that was being used on the Front Desk form</li>
         </ul>
     </details>
-
 </asp:Content>
 

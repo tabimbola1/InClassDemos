@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="Admin_Sercurity_Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="Admin_Security_Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="Server">
     <div class="row jumbotron">
@@ -13,8 +13,12 @@
         </div>
     </div>
     <%--List of Waiters--%>
-    <asp:ObjectDataSource runat="server" ID="WaiterDataSource" OldValuesParameterFormatString="original_{0}" SelectMethod="ListWaiters" TypeName="eRestaurantSystem.BLL.AdminController"></asp:ObjectDataSource>
+    <asp:ObjectDataSource runat="server" ID="WaiterDataSource" 
+        OldValuesParameterFormatString="original_{0}" 
+        SelectMethod="ListWaiters" 
+        TypeName="eRestaurantSystem.BLL.AdminController">
 
+    </asp:ObjectDataSource>
     <asp:ListView ID="UserListView" runat="server"
     ItemType="eRestaurantSystem.DAL.Entities.Security.ApplicationUser"
     OnItemCommand="UserListView_ItemCommand">
@@ -76,7 +80,9 @@
                 <td runat="server">
                     <asp:DataPager runat="server" ID="DataPager1">
                         <Fields>
-                            <asp:NextPreviousPagerField ButtonType="Button" ShowFirstPageButton="True" ShowLastPageButton="True"></asp:NextPreviousPagerField>
+                            <asp:NextPreviousPagerField ButtonType="Button" 
+                                ShowFirstPageButton="True"
+                                 ShowLastPageButton="True"></asp:NextPreviousPagerField>
                         </Fields>
                     </asp:DataPager>
                 </td>
@@ -84,7 +90,6 @@
         </table>
     </LayoutTemplate>
 </asp:ListView>
-
     <asp:ListView ID="RoleListView" runat="server"
     ItemType="Microsoft.AspNet.Identity.EntityFramework.IdentityRole"
     OnItemCommand="RoleListView_ItemCommand">
@@ -135,5 +140,5 @@
         </table>
     </LayoutTemplate>
 </asp:ListView>
-
 </asp:Content>
+

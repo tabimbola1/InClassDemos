@@ -21,11 +21,11 @@ namespace eRestaurantSystem.BLL.Security
         private const string STR_EMAIL_FORMAT = "{0}@eRestaurant.tba";
         private const string STR_WEBMASTER_USERNAME = "Webmaster";
         #endregion
+
         public UserManager()
             : base(new UserStore<ApplicationUser>(new ApplicationDbContext()))
         {
         }
-
         public void AddDefaultUsers()
         {
             using (var context = new eRestaurantContext())
@@ -62,5 +62,6 @@ namespace eRestaurantSystem.BLL.Security
                 }
             }
         }
+
     }
 }
